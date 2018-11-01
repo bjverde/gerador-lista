@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Estratégias de Aprovação - Gerador de Lista</title>
+    <link rel="shortcut icon" href="http://www.coachvictor.com.br/wp-content/uploads/2014/02/favicon1.ico" />
+    <link rel="stylesheet" href="index.css">
+    <script src="geradorLista.js"></script>
+</head>
+<body>
+    <header>
+      <p class="alert-box caixa">Gerador de Lista - versão: 1.2.0</p>
+    </header>
+    <main>
+      <div id="form" class="alert-box caixa">
+      <!-- <form id="geralista" method="get"> -->
+
+          <label for="qtdpalavras">Quantida de palavras:</label>
+          <select id="qtdpalavras" name="qtdpalavras">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10" selected>10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+
+          <br>
+
+          <!--
+          <label for="dicionario">Tipo de dicionario:</label>
+          <select id="dicionario" name="dicionario">
+            <option value="Simples" selected>Simples</option>
+            <option value="Complexas">Complexas</option>
+          </select>
+        -->
+
+          <br>
+
+          <fieldset>
+            <legend>Selecione os tipos de palavras:</legend>
+            <input name="dicionario" value="dicSimples" type="checkbox"> Simples
+            <input name="dicionario" value="dicComplex" type="checkbox" checked> Complexas
+            <input name="dicionario" value="dicConstit" type="checkbox"> Constituição
+            <input name="dicionario" value="dicComputa" type="checkbox"> Computação
+          </fieldset>
+
+          <fieldset>
+            <legend>Tipo de lista:</legend>
+            <input type="radio" name="tipLista" value="bolinha" checked> Bolinha
+            <input type="radio" name="tipLista" value="numerica"> Numérica
+          </fieldset>
+
+          <fieldset>
+            <legend>Ordem:</legend>
+            <input type="radio" name="ordem" value="aleatoria" checked> Aleatória
+            <input type="radio" name="ordem" value="alfabetica"> Alfabética
+          </fieldset>
+
+          <button onclick="gerarLista()">Gerar lista</button>
+          <button onclick="limparLista()">Limpar a lista</button>
+      <!-- </form> -->
+      </div>
+      <div id="lista" class="alert-box caixa"></div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
