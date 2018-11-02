@@ -10,6 +10,21 @@
     margin: 10px;
 }
 
+#logo {
+	background-color: #000000;
+	height: 86px;
+}
+
+.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.warning {
+	background:#fff8c4 no-repeat 10px 50%;
+	border:1px solid #f2c779;
+}
 
 button {
   -webkit-border-radius: 28;
@@ -33,8 +48,6 @@ button:hover {
 header, main {
     padding-bottom: 0;
     float: none;
-    width: 80%;
-    margin: 0 auto;
     background-color: #FFFFFF;
 }
 
@@ -42,4 +55,7 @@ body {
   background-color: #F7F7F7;
   font-size: 12px;
   font-family: Tahoma,Geneva,Arial,sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
