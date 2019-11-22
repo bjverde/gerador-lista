@@ -59,18 +59,23 @@
                 </div>
             </div>
 
-            <fieldset>
-              <legend>Tipo de lista:</legend>
-              <input type="radio" name="tipLista" value="bolinha" checked> Bolinha
-              <input type="radio" name="tipLista" value="numerica"> Numérica
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Tipo de lista:</legend>
+                    <div class="col-sm-10">
+                        <input type="radio" name="tipLista" value="bolinha" checked> Bolinha
+                        <input type="radio" name="tipLista" value="numerica"> Numérica
+                    </div>
+                </div>              
+              <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Ordem:</legend>
+                  <div class="col-sm-10">
+                      <input type="radio" name="ordem" value="aleatoria" checked> Aleatória
+                      <input type="radio" name="ordem" value="alfabetica"> Alfabética                    
+                  </div>
+              </div>
             </fieldset>
-
-            <fieldset>
-              <legend>Ordem:</legend>
-              <input type="radio" name="ordem" value="aleatoria" checked> Aleatória
-              <input type="radio" name="ordem" value="alfabetica"> Alfabética
-            </fieldset>
-
+            <br>
             <button type="button" class="btn btn-secondary" onclick="gerarLista()">Gerar lista</button>
             <button type="button" class="btn btn-secondary" onclick="limparLista()">Limpar a lista</button>
         <!-- </form> -->
